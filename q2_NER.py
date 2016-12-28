@@ -22,7 +22,7 @@ class Config(object):
   batch_size = 64
   label_size = 5
   hidden_size = 100
-  max_epochs = 24 
+  max_epochs = 24 #24 
   early_stopping = 2
   dropout = 0.9
   lr = 0.001
@@ -194,14 +194,15 @@ class NERModel(LanguageModel):
     xavier_initializer = xavier_weight_init()
     with tf.variable_scope('Layer'):
         w = tf.get_variable('W', initializer=xavier_initializer([self.config.window_size * self.config.embed_size, self.config.hidden_size]))
-        b1 = tf.get_variable('b1', initializer=tf.zeros((self.config.hidden_size,)))
+        b1 = tf.get_variable('b1', initializer=tf.random_normal((self.config.hidden_size,)))
     with tf.variable_scope('Softmax'):
         u = tf.get_variable('U', initializer=xavier_initializer((self.config.hidden_size, self.config.label_size)))
-        b2 = tf.get_variable('b2', initializer=tf.zeros([self.config.label_size]))
+        b2 = tf.get_variable('b2', initializer=tf.random_normal([self.config.label_size]))
     
     h = tf.tanh(tf.matmul(window, w) + b1)
     h_dropout = tf.nn.dropout(h, self.dropout_placeholder)
-    output = tf.nn.softmax(tf.matmul(h, u) + b2)
+    output = tf.nn.softmax(tf.matmul(h_dropout, u) + b2)
+    #output = tf.nn.dropout(o, self.dropout_placeholder)
     
     # raise NotImplementedError
     ### END YOUR CODE
@@ -219,8 +220,8 @@ class NERModel(LanguageModel):
     """
     ### YOUR CODE HERE
     loss1 = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(y, self.labels_placeholder))
-    regularizer = tf.nn.l2_loss(self.config.l2)
-    loss = tf.reduce_mean(loss1 + 0.01 * regularizer)
+    regularizer = tf.nn.l2_loss(loss1)
+    loss = tf.reduce_mean(loss1 + self.config.l2 * regularizer)
     # raise NotImplementedError
     ### END YOUR CODE
     return loss
