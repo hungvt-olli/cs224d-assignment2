@@ -204,7 +204,7 @@ class NERModel(LanguageModel):
     output = tf.nn.softmax(tf.matmul(h_dropout, u) + b2)
     
     tf.get_collection('total_loss')
-    tf.add_to_collection('total_loss', self.config.l2 * tf.nn.l2_loss(u))
+    tf.add_to_collection('total_loss', self.config.l2 * (tf.nn.l2_loss(u) + tf.nn.l2_loss(w)))
     #output = tf.nn.dropout(o, self.dropout_placeholder)
     
     # raise NotImplementedError
@@ -223,13 +223,17 @@ class NERModel(LanguageModel):
     """
     ### YOUR CODE HERE
     loss1 = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(y, self.labels_placeholder))
+    #loss1 = tf.nn.softmax_cross_entropy_with_logits(y, self.labels_placeholder)
     
     #regularizer = tf.nn.l2_loss(loss1)
     #loss = tf.reduce_mean(loss1 + self.config.l2 * regularizer)
     
     tf.add_to_collection('total_loss', loss1)
-    loss = tf.reduce_mean(tf.get_collection('total_loss'))
+    
+    #loss = tf.reduce_mean(tf.get_collection('total_loss'))
+    #loss = tf.reduce_sum(tf.get_collection('total_loss'))
     #loss = tf.reduce_mean(tf.add(loss1,tf.get_collection('total_loss')[0]))
+    loss = tf.add(loss1,tf.get_collection('total_loss')[0])
     # raise NotImplementedError
     ### END YOUR CODE
     return loss
