@@ -201,7 +201,8 @@ class NERModel(LanguageModel):
     
     h = tf.tanh(tf.matmul(window, w) + b1)
     h_dropout = tf.nn.dropout(h, self.dropout_placeholder)
-    output = tf.nn.softmax(tf.matmul(h_dropout, u) + b2)
+    #output = tf.nn.softmax(tf.matmul(h_dropout, u) + b2)
+    output = (tf.matmul(h_dropout, u) + b2)
     
     tf.get_collection('total_loss')
     tf.add_to_collection('total_loss', self.config.l2 * (tf.nn.l2_loss(u) + tf.nn.l2_loss(w)))
