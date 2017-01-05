@@ -1,63 +1,72 @@
 Epoch 0
-Training perplexity: 1654.23071289
-Validation perplexity: 484.702178955
-Total time: 324.858187914
+Training perplexity: 1633.91162109
+Validation perplexity: 485.690307617
+Total time: 330.438162088
 Epoch 1
-Training perplexity: 488.089996338
-Validation perplexity: 377.075531006
-Total time: 316.908533096
+Training perplexity: 490.688903809
+Validation perplexity: 380.039672852
+Total time: 339.304512024
 Epoch 2
-Training perplexity: 387.327636719
-Validation perplexity: 323.332977295
-Total time: 326.445293903
+Training perplexity: 389.633148193
+Validation perplexity: 323.854827881
+Total time: 352.048418999
 Epoch 3
-Training perplexity: 330.714263916
-Validation perplexity: 289.327453613
-Total time: 336.589848995
+Training perplexity: 331.166687012
+Validation perplexity: 288.519042969
+Total time: 345.828112841
 Epoch 4
-Training perplexity: 293.389465332
-Validation perplexity: 265.329803467
-Total time: 323.801134109
+Training perplexity: 292.385314941
+Validation perplexity: 263.930175781
+Total time: 349.39664197
 Epoch 5
-Training perplexity: 264.981872559
-Validation perplexity: 247.391830444
-Total time: 324.488077879
+Training perplexity: 263.844848633
+Validation perplexity: 245.756134033
+Total time: 352.246730089
 Epoch 6
-Training perplexity: 243.19430542
-Validation perplexity: 233.30581665
-Total time: 321.498736143
+Training perplexity: 241.735809326
+Validation perplexity: 231.444198608
+Total time: 337.30170393
 Epoch 7
-Training perplexity: 225.455062866
-Validation perplexity: 221.854522705
-Total time: 323.516915798
+Training perplexity: 224.431793213
+Validation perplexity: 220.444107056
+Total time: 350.092025995
 Epoch 8
-Training perplexity: 210.931396484
-Validation perplexity: 212.608566284
-Total time: 319.943429947
+Training perplexity: 209.626998901
+Validation perplexity: 210.97807312
+Total time: 340.687359095
 Epoch 9
-Training perplexity: 198.666946411
-Validation perplexity: 204.811233521
-Total time: 311.781505823
+Training perplexity: 197.62046814
+Validation perplexity: 203.408752441
+Total time: 383.038881063
 Epoch 10
-Training perplexity: 188.286209106
-Validation perplexity: 198.795166016
-Total time: 322.902603149
+Training perplexity: 187.396331787
+Validation perplexity: 197.34022522
+Total time: 355.269585133
 Epoch 11
-Training perplexity: 179.425186157
-Validation perplexity: 192.961242676
-Total time: 314.002460003
+Training perplexity: 178.792327881
+Validation perplexity: 191.979766846
+Total time: 345.470685959
 Epoch 12
-Training perplexity: 171.448150635
-Validation perplexity: 188.836380005
-Total time: 309.081527948
+Training perplexity: 171.097961426
+Validation perplexity: 187.338256836
+Total time: 354.306881905
 Epoch 13
-Training perplexity: 164.843048096
-Validation perplexity: 184.721221924
-Total time: 314.429661036
+Training perplexity: 164.295547485
+Validation perplexity: 183.444503784
+Total time: 360.963699102
 Epoch 14
-Training perplexity: 158.595993042
-Validation perplexity: 181.317504883
-Total time: 316.771060944
+Training perplexity: 158.51071167
+Validation perplexity: 180.242218018
+Total time: 349.246210098
 Epoch 15
-Training perplexity: 153.181045532
-Validation perplexity: 178.391738892
+Training perplexity: 153.239852905
+Validation perplexity: 177.608657837
+Total time: 350.716357946
+Epoch 16
+Training perplexity: 148.403259277
+Validation perplexity: 174.782653809
+Total time: 359.782261133
+Epoch 17
+Training perplexity: 143.928482056
+Validation perplexity: 173.019577026
+Total time: 363.942093849
