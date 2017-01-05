@@ -80,7 +80,7 @@ class RNNLM_Model(LanguageModel):
     """
     ### YOUR CODE HERE
     self.input_placeholder = tf.placeholder(tf.int32, (None, self.config.num_steps))
-    self.labels_placeholder = tf.placeholder(tf.float32, (None, self.config.num_steps))
+    self.labels_placeholder = tf.placeholder(tf.int32, (None, self.config.num_steps))
     self.dropout_placeholder = tf.placeholder(tf.float32)
     
     # raise NotImplementedError
@@ -254,6 +254,9 @@ class RNNLM_Model(LanguageModel):
                a tensor of shape (batch_size, hidden_size)
     """
     ### YOUR CODE HERE
+    # add dropout for input
+    inputs = [ tf.nn.dropout(o, self.dropout_placeholder) for o in inputs ]
+    
     self.initial_state = tf.zeros((self.config.batch_size, self.config.hidden_size), dtype=tf.float32)
     #self.final_state = tf.zeros()
     
@@ -270,11 +273,12 @@ class RNNLM_Model(LanguageModel):
             b_1 = tf.get_variable('b_1', [self.config.hidden_size])
             
             e = inputs[i]
-            hn = tf.sigmoid(tf.matmul(h, H) + tf.matmul(e, I) + b_1)        
+            hn = tf.nn.sigmoid(tf.matmul(h, H) + tf.matmul(e, I) + b_1)        
             h = hn
             rnn_outputs.append(h)
         
     self.final_state = h
+    rnn_outputs = [ tf.nn.dropout(o, self.dropout_placeholder) for o in rnn_outputs ]
     # raise NotImplementedError
     ### END YOUR CODE
     return rnn_outputs
