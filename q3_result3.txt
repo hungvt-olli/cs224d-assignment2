@@ -1,0 +1,93 @@
+Epoch 0
+Training perplexity: 1601.30981445
+Validation perplexity: 476.751800537
+Total time: 317.868921041
+Epoch 1
+Training perplexity: 486.275909424
+Validation perplexity: 376.119293213
+Total time: 334.46626091
+Epoch 2
+Training perplexity: 389.165435791
+Validation perplexity: 322.230804443
+Total time: 396.907994032
+Epoch 3
+Training perplexity: 331.74911499
+Validation perplexity: 287.121887207
+Total time: 480.840553045
+Epoch 4
+Training perplexity: 292.528930664
+Validation perplexity: 262.519378662
+Total time: 442.633540154
+Epoch 5
+Training perplexity: 263.9012146
+Validation perplexity: 244.559417725
+Total time: 475.410671949
+Epoch 6
+Training perplexity: 241.773849487
+Validation perplexity: 230.256011963
+Total time: 503.577548981
+Epoch 7
+Training perplexity: 223.641677856
+Validation perplexity: 218.891571045
+Total time: 383.307698965
+Epoch 8
+Training perplexity: 209.117141724
+Validation perplexity: 209.702087402
+Total time: 360.210977077
+Epoch 9
+Training perplexity: 197.043380737
+Validation perplexity: 201.799545288
+Total time: 343.99072814
+Epoch 10
+Training perplexity: 186.850006104
+Validation perplexity: 195.423568726
+Total time: 368.905019045
+Epoch 11
+Training perplexity: 177.863586426
+Validation perplexity: 190.403869629
+Total time: 332.884878159
+Epoch 12
+Training perplexity: 170.290939331
+Validation perplexity: 185.812850952
+Total time: 334.258000135
+Epoch 13
+Training perplexity: 163.539642334
+Validation perplexity: 182.335464478
+Total time: 337.879216909
+Epoch 14
+Training perplexity: 157.626281738
+Validation perplexity: 179.202957153
+Total time: 343.281364918
+Epoch 15
+Training perplexity: 152.387451172
+Validation perplexity: 176.537185669
+Total time: 343.145204067
+=-==-==-==-==-== 163.677108765
+Test perplexity: 163.534500122
+=-==-==-==-==-=
+in palo alto in will it sentencing or association in chicago the by into mr. that about and the by in undercut to the at to cov
+ered subjects control is having and the between makers fidelity produced <eos>
+>
+<unk> <unk> interest-rate was and down of N but <eos>
+> a
+a to <unk> greece <unk> <unk> away after an memories it bid <unk> far is <eos>
+> beautiful
+beautiful to standing does that the <unk> potentially hurt mix <eos>
+> b
+b in soybean <eos>
+> I
+<unk> <unk> states to they about a the in legitimate and control when <eos>
+> I am
+<unk> am in crusade a and an arbitrage <eos>
+> i am
+i am in approved conference has said vice said pitches that founder are and speculators lobby but for to an to <unk> an with to
+ simple to standard with <eos>
+> he is
+he is to such <unk> that spending china <eos>
+> she is
+she is N when shelves municipal assumed des managed and a this <eos>
+> god
+god in similar <unk> and nearly as pcs covers an and the <eos>
+> news
+news in decrease point he to the by it binge a even goods for after aggressively and the some from for to in to the to to aids
+<eos>
